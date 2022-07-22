@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a,o,q,c;
+ clrscr();
+ printf("\n\t\t\tWELCOME TO VIP DA DHABA\n\n1.About us\n2.Menu\n\nWhat can i help you : ");
+ scanf("%d",&a);
+ switch(a)
+ {
+   case 1 : printf("\nAbout us-\nShop name: Vip da dhaba\nContact us:xxxyyyzzz \nOwner: Purvesh Choudhary");
+	    break;
+   case 2 : printf("\nMenu-\n1.Aloo chat\n2.Bhel\n3.Panipuri\nWhat do you want : ");
+	    scanf("%d",&o);
+	    switch(o)
+	    {
+	      case 1 : printf("\nItem : Aloo chat\nPrice : 50 Rs.\nQuantity : ");
+		       scanf("%d",&q);
+		       printf("\nTotal Price : %d Rs.",q*50);
+		       printf("\n\n1.Parcel or 2.Here : ");
+		       scanf("%d",&c);
+		       switch(c)
+		       {
+			 case 1 : printf("\nIt will be Delivered");
+				  break;
+			 case 2 : printf("\nWait a minute...");
+				  break;
+			 default: printf("Invalid choice");
+				  break;
+		       }
+		       break;
+	      case 2 : printf("\nItem : Bhel\nPrice : 20 Rs.\nQuantity : ");
+		       scanf("%d",&q);
+		       printf("\nTotal Price : %d Rs.",q*20);
+		       printf("\n\n1.Parcel or 2.Here : ");
+		       scanf("%d",&c);
+		       switch(c)
+		       {
+			 case 1 : printf("\nIt will be Delivered");
+				  break;
+			 case 2 : printf("\nWait a minute...");
+				  break;
+			 default: printf("Invalid choice");
+				  break;
+		       }
+		       break;
+	      case 3 : printf("\nItem : Panipuri\nPrice : 10 Rs.\nQuantity : ");
+		       scanf("%d",&q);
+		       printf("\nTotal Price : %d Rs.",q*10);
+		       printf("\n\n1.Parcel or 2.Here : ");
+		       scanf("%d",&c);
+		       switch(c)
+		       {
+			 case 1 : printf("\nIt will be Delivered");
+				  break;
+			 case 2 : printf("\nWait a minute...");
+				  break;
+			 default: printf("Invalid choice");
+				  break;
+		       }
+		       break;
+	      default: printf("\nInvalid Choice");
+		       break;
+	    }
+	    break;
+   default: printf("invalid choice");
+	    break;
+ }
+ getch();
+}
